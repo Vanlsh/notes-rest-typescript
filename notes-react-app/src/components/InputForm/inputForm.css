@@ -1,0 +1,58 @@
+.form-container{
+    width: 200px;
+    margin: 20px;
+}
+.btn-add {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    height: auto;
+}
+.btn-edit {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    height: auto;
+    background: gray;
+}
+
+.btn-edit:hover {
+    color: white;
+}
+.btn-add:hover {
+    background: gray;
+    color: white;
+}
+.btn-container{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+}
+#text-content{
+    width: 200px;
+    border-radius: 4px;
+    margin: 10px 0;
+    height: 100px;
+    resize: none;
+}
+#text-title{
+    width: 200px;
+    border-radius: 4px;
+    height: 38px;
+}
+.dropdown{
+    margin: 10px 0;
+    width: 200px;
+}
