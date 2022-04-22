@@ -1,6 +1,7 @@
 import {Request, Response} from "express";
 import NoteService from "../services/NoteService";
 import {noteSchema, idSchema, editNoteSchema} from "../helpers/validations";
+import {ICounter} from "../Types/ICounter";
 
 class NoteController{
     async create(req: Request,res: Response){
@@ -60,7 +61,7 @@ class NoteController{
     }
     getStats(req: Request,res: Response){
         try{
-            const status: number = NoteService.getStats()
+            const status: ICounter[] = NoteService.getStats()
             res.status(200).json(status)
         } catch (e: any) {
             res.status(500).json(e.message)

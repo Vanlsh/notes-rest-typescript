@@ -1,5 +1,8 @@
 import {INote, INoteUpdate} from "../Types/INote";
 import Note from "../repositories/Note";
+import {ICounter} from "../Types/ICounter";
+
+
 
 class NoteService {
     public create(post:INote): INote[]{
@@ -29,7 +32,19 @@ class NoteService {
         return notes
     }
     public getStats(){
-        const stats: number = Note.getAll().length
+        const stats = Note.getAll().length
+        // const countCategoryStatus: ICounter[] = [
+        //     {type: "task", active: 0, archive: 0},
+        //     {type: "idea", active: 0, archive: 0},
+        //     {type: "randomThought", active: 0, archive: 0},
+        // ]
+        // countCategoryStatus.forEach(category => {
+        //     notes.forEach(note => {
+        //         if(note.category === category.type){
+        //             note.active ? category.active = category.active + 1 : category.archive = category.archive + 1
+        //         }
+        //     })
+        // })
         return stats;
     }
 }
