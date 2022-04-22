@@ -61,7 +61,7 @@ class NoteController{
     }
     getStats(req: Request,res: Response){
         try{
-            const status: ICounter[] = NoteService.getStats()
+            const status = NoteService.getStats()
             res.status(200).json(status)
         } catch (e: any) {
             res.status(500).json(e.message)
