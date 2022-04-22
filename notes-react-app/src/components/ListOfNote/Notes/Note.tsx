@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import './notes.css'
 import {INote} from "../../../models/INote";
 import {useAppDispatch} from "../../../hooks/redux";
-import {noteSlice} from "../../../store/redusers/NoteSlice";
+import {noteSlice} from "../../../store/reducers/NoteSlice";
 import {Helper} from "../../../helper/Helper";
 
 

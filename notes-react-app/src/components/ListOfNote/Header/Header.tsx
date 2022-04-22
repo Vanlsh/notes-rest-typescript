@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css'
 import {useAppDispatch} from "../../../hooks/redux";
-import {noteSlice} from '../../../store/redusers/NoteSlice'
+import {noteSlice} from '../../../store/reducers/NoteSlice'
 import {notesAPI} from "../../../services/NoteService";
 const Header = () => {
     const [deleteAll,{}] = notesAPI.useDeleteAllNotesMutation()

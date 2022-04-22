@@ -5,7 +5,7 @@ import {useAppDispatch, useAppSelector} from "../../hooks/redux";
 import {notesAPI} from "../../services/NoteService";
 import {INote} from "../../models/INote";
 import {Helper} from "../../helper/Helper";
-import {noteSlice} from "../../store/redusers/NoteSlice";
+import {noteSlice} from "../../store/reducers/NoteSlice";
 
 
 
